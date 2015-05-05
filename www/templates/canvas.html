@@ -1,0 +1,19 @@
+<div class="frame">
+  <div class="lockHeart" ng-click="lock()"></div>
+  <div class="frame-left">
+    <div class="frame-top" ng-click="picClick(0)">
+      <div class="pic" style="{{pic(it)}}" ng-hide="picHide(0, it)" ng-repeat="it in scamble[0]"></div>
+    </div>
+    <div class="frame-bottom" ng-click="picClick(1)">
+      <div class="pic" style="{{pic(it)}}" ng-hide="picHide(1, it)" ng-repeat="it in scamble[1]"></div>
+    </div>
+  </div>
+  <div class="frame-right">
+    <div class="frame-top" ng-click="picClick(2)">
+      <div class="pic" style="{{pic(it)}}" ng-hide="picHide(2, it)" ng-repeat="it in scamble[2]"></div>
+    </div>
+    <div class="frame-bottom" ng-click="picClick(3)">
+      <div class="pic" style="{{pic(it)}}" ng-hide="picHide(3, it)" ng-repeat="it in scamble[3]"></div>
+    </div>
+  </div>
+</div>
